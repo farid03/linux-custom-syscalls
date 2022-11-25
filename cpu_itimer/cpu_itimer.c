@@ -3,7 +3,7 @@
 #include <linux/syscalls.h>
 #include <linux/uaccess.h>
 
-void print_cpu_itimer_to_kernel(truct cpu_itimer *cpu_itimer) {
+void print_cpu_itimer_to_kernel(struct cpu_itimer *cpu_itimer) {
     printk("struct cpu_itimer {\n");
     printk("  expires: %llu\n", cpu_itimer->expires);
     printk("  incr: %llu\n", cpu_itimer->incr);
