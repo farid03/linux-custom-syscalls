@@ -53,7 +53,7 @@
 
     ```
     548    64    cpu_itimer    sys_cpu_itimer
-    559    64    pci_dev       sys_pci_dev
+    549    64    pci_dev       sys_pci_dev
     ```
 
 6. Собрать ядро (значение параметра -j зависит от количества ядер на машине):
