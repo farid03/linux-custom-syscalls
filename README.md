@@ -51,7 +51,7 @@
     asmlinkage long pci_dev(struct pci_dev_info *user_pci_device_info, unsigned int vendor, unsigned int device);
     ```
 
-5. Дополнить таблицу системных вызовов arch/x86/entry/syscalls/syscall_64.tbl, присвоив новым системным вызовам свободные номера:
+5. Дополнить таблицу системных вызовов `arch/x86/entry/syscalls/syscall_64.tbl`, присвоив новым системным вызовам свободные номера:
 
     ```
     548    64    cpu_itimer    sys_cpu_itimer
