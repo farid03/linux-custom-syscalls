@@ -29,7 +29,10 @@ void print_pci_dev_info(struct pci_dev_info *pci_dev_info) {
 }
 
 int main(int argc, char** argv) {
-
+    if (argc != 3) {
+        printf("Invalid command line argeuments!\n");
+    }
+    
     printf("---- pci_dev syscall testing ----\n");
     struct pci_dev_info dev = { 0 };
     long int ret_code = syscall(549, &dev, atoi(argv[1]), atoi(argv[2]));
