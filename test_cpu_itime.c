@@ -11,7 +11,10 @@ struct cpu_itimer {
 };
 
 int main(int argc, char** argv) {
-
+    if (argc != 3) {
+        printf("Invalid command line argeuments!\n");
+    }
+    
     printf("---- cpu_itimer syscall testing ----\n");
     struct cpu_itimer itimer;
     pid_t pid = atoi(argv[1]);
